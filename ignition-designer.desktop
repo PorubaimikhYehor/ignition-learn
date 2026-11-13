@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ignition Designer
+Comment=Launch Ignition Designer in a Fedora toolbox
+Exec=/usr/bin/toolbox run --container ignition-designer -- bash -lc "cd ~/ignition-designer/designerlauncher && env -u WAYLAND_DISPLAY GDK_BACKEND=x11 ./designerlauncher.sh"
+Terminal=false
+Categories=Development;IDE;
+StartupNotify=true
